@@ -40,11 +40,10 @@ const Give = () => {
             <Heart className="w-10 h-10 text-gold" />
           </div>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-cream mb-6 animate-fade-up stagger-1">
-            YOUR <span className="text-gold">GENEROSITY</span>, OUR MISSION
+            YOUR <span className="text-gold">PARTNERSHIP</span>, CHANGES LIVES
           </h1>
           <p className="text-cream/70 text-lg max-w-2xl mx-auto animate-fade-up stagger-2">
-            Give towards our mission to reach a billion souls in ten thousand cities 
-            with the message of the gospel.
+            God has given us a mandate to illuminate cities and awaken hearts across the earth. Your giving becomes part of that divine movement, fueling outreach, missions, discipleship, and the spread of the gospel to multitudes.
           </p>
         </div>
       </section>

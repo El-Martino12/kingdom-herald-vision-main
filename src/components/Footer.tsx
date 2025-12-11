@@ -66,11 +66,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-cream/70">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-sm">+234 XXX XXX XXXX</span>
+                <span className="text-sm">+234 802 665 7335, 08152140777</span>
               </div>
               <div className="flex items-center gap-3 text-cream/70">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-sm">info@kingdomheralders.org</span>
+                <span className="text-sm">kingdomheraldersministries@gmail.com</span>
               </div>
             </div>
             {/* Social Links */}

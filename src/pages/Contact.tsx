@@ -135,7 +135,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-heading text-lg text-midnight mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+234 XXX XXX XXXX</p>
+                      <p className="text-muted-foreground">+234 802 665 7335, 08152140777</p>
                     </div>
                   </div>
 
@@ -145,7 +145,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-heading text-lg text-midnight mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@kingdomheralders.org</p>
+                      <p className="text-muted-foreground">kingdomheraldersministries@gmail.com</p>
                     </div>
                   </div>
 
@@ -158,7 +158,8 @@ const Contact = () => {
                       <p className="text-muted-foreground">
                         Sunday Service: 8:00 AM - 11:00 AM
                         <br />
-                        Wednesday Bible Study: 5:30 PM
+                        Monday Bible Study: 5:30 PM<br></br>
+                        Friday Prayer Meeting: 5:30 PM
                       </p>
                     </div>
                   </div>

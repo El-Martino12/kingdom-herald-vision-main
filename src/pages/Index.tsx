@@ -280,11 +280,10 @@ const Index = () => {
         </div>
         <div className="container-custom mx-auto relative z-10 text-center">
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-cream mb-4">
-            YOUR <span className="text-gold">GENEROSITY</span>, OUR MISSION
+            YOUR <span className="text-gold">PARTNERSHIP</span>, CHANGES LIVES
           </h2>
           <p className="text-cream/70 text-lg max-w-2xl mx-auto mb-8">
-            Give towards our mission to reach a billion souls in ten thousand cities with 
-            the message of the gospel.
+            God has given us a mandate to illuminate cities and awaken hearts across the earth. Your giving becomes part of that divine movement, fueling outreach, missions, discipleship, and the spread of the gospel to multitudes.
           </p>
           <Button asChild variant="gold" size="xl">
             <Link to="/give">
@@ -328,7 +327,8 @@ const Index = () => {
                   <p className="text-muted-foreground">
                     Sunday Service: 8:00 AM - 11:00 AM
                     <br />
-                    Wednesday Bible Study: 5:30 PM
+                    Monday Bible Study: 5:30 PM<br></br>
+                    Friday Prayer Meeting: 5:30 PM
                   </p>
                 </div>
               </div>
