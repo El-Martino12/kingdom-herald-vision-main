@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Royal Gold */
+    --gold: 43 75% 52%;
+    --gold-light: 43 80% 65%;
+    --gold-dark: 43 70% 40%;
+    
+    /* Deep Midnight Blue */
+    --midnight: 213 76% 11%;
+    --midnight-light: 213 60% 20%;
+    --midnight-lighter: 213 50% 30%;
+    
+    /* Soft White */
+    --cream: 0 0% 98%;
+    --cream-dark: 30 10% 94%;
+    
+    /* Accent Burgundy */
+    --burgundy: 0 60% 30%;
+    --burgundy-light: 0 50% 40%;
+    
+    --background: 0 0% 98%;
+    --foreground: 213 76% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 76% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 76% 11%;
+
+    --primary: 43 75% 52%;
+    --primary-foreground: 213 76% 11%;
+
+    --secondary: 213 76% 11%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 30 10% 94%;
+    --muted-foreground: 213 40% 40%;
+
+    --accent: 0 60% 30%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 43 75% 52%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 213 76% 11%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 43 75% 52%;
+    --sidebar-primary-foreground: 213 76% 11%;
+    --sidebar-accent: 213 60% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 213 50% 30%;
+    --sidebar-ring: 43 75% 52%;
+  }
+
+  .dark {
+    --background: 213 76% 11%;
+    --foreground: 0 0% 98%;
+
+    --card: 213 60% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 213 60% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 43 75% 52%;
+    --primary-foreground: 213 76% 11%;
+
+    --secondary: 213 50% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 213 50% 20%;
+    --muted-foreground: 30 10% 70%;
+
+    --accent: 0 60% 35%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 213 50% 25%;
+    --input: 213 50% 25%;
+    --ring: 43 75% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, hsl(var(--midnight)) 0%, hsl(var(--midnight-light)) 50%, hsl(var(--midnight)) 100%);
+  }
+  
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--gold-dark)) 0%, hsl(var(--gold)) 50%, hsl(var(--gold-light)) 100%);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .btn-gold {
+    @apply bg-primary text-primary-foreground hover:bg-gold-dark transition-all duration-300 font-medium;
+  }
+
+  .btn-outline-gold {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-medium;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}
