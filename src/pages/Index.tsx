@@ -16,7 +16,7 @@ const campuses = [
     path: "/campuses/university-of-uyo",
   },
   {
-    name: "Federal University of Agriculture",
+    name: "Federal University of Technology",
     location: "Ikot Abasi",
     path: "/campuses/fua-ikot-abasi",
   },
@@ -29,6 +29,11 @@ const campuses = [
     name: "Bonny Island Campus",
     location: "Port Harcourt",
     path: "/campuses/bonny-island",
+  },
+  {
+    name: "Federal University of Agriculture",
+    location: "Obio Akpa",
+    path: "/campuses/obio-akpa",
   },
 ];
 
