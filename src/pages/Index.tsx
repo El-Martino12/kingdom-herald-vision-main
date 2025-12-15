@@ -89,7 +89,7 @@ const Index = () => {
               <span className="block">Global Ministries</span>
             </h1>
             <p className="text-xl md:text-2xl text-cream/80 mb-8 font-light italic">
-              Reaching a Billion Souls in Ten Thousand Cities.
+              Raising men of kingdom priority, transforming the world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="hero" size="xl">
